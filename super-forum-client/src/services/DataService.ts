@@ -8,7 +8,7 @@ export async function getCategories(): Promise<Category[]> {
       const categories = [];
       const programming = new Category("1", "Programming");
       categories.push(programming);
-      const cooking = new Category("1", "Cooking");
+      const cooking = new Category("2", "Cooking");
       categories.push(cooking);
       const sports = new Category("3", "Sports");
       categories.push(sports);
