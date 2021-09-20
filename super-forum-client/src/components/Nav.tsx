@@ -8,7 +8,7 @@ import SideBarMenus from "./sidebar/SideBarMenus";
 
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const { width } = useWindowDimensions();
+  const { width } = useWindowDimensions(); //to determine if we are on a mobil device
 
   const getMobileMenu = () => {
     if (width <= 768) {
