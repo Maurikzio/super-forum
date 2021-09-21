@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { faRegistered, faSignInAlt, faUser, faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { UserProfileSetType } from "../../store/user/Reducer";
-import { AppState } from "../../store/AppState";
+import { UserProfileSetType } from "../../../store/user/Reducer";
+import { AppState } from "../../../store/AppState";
 import "./SideBarMenus";
-import Registration from "../auth/Registration";
-import Login from "../auth/Login";
-import Logout from "../auth/Logout";
+import Registration from "../../auth/Registration";
+import Login from "../../auth/Login";
+import Logout from "../../auth/Logout";
 
 const SideBarMenus = () => {
   const [showRegister, setShowRegister] = useState(false);

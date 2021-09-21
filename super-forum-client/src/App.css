@@ -27,32 +27,40 @@
   gap: 0.75rem 0.4rem;
 }
 
-.navigation {
-  grid-area: nav;
-  background-color: darkcyan;
+.screen-root-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-bottom: 2em;
+  border: var(--border);
+  border-radius: 0.3em;
 }
 
-.sidebar {
+/* .navigation {
+  grid-area: nav;
+  background-color: darkcyan;
+} */
+
+/* .sidebar {
   background-color: aliceblue;
   grid-area: sidebar;
   min-height: var(--min-screen-height);
-}
+} */
 
-.leftmenu {
+/* .leftmenu {
   grid-area: leftmenu;
   background-color: skyblue;
-}
+} */
 
-.content {
+/* .content {
   grid-area: content;
   min-height: var(--min-screen-height);
   background-color: blanchedalmond;
-}
+} */
 
-.rightmenu {
+/* .rightmenu {
   grid-area: rightmenu;
   background-color: coral;
-}
+} */
 
 .modal-menu {
   position: fixed;
@@ -191,6 +199,7 @@ hr {
   width: 100%;
   border: solid 2px var(--section-divider-color);
 }
+
 
 @media screen and (orientation: portrait) and (max-width: 768px) {
   .form-buttons {

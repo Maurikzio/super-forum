@@ -1,0 +1,39 @@
+.screen-root-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 0.7fr 0.9fr 1.5fr 0.9fr;
+  grid-template-rows: 2.75rem 3fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "sidebar leftmenu content rightmenu";
+  gap: 0.75rem 0.4rem;
+}
+
+.navigation {
+  grid-area: nav;
+  background-color: darkcyan;
+}
+
+.sidebar {
+  background-color: aliceblue;
+  grid-area: sidebar;
+  min-height: var(--min-screen-height);
+}
+
+.leftmenu {
+  grid-area: leftmenu;
+  background-color: skyblue;
+}
+
+.content {
+  grid-area: content;
+  min-height: var(--min-screen-height);
+  background-color: blanchedalmond;
+  padding: 0.5em 0.75em 0.5em 0.75em;
+}
+
+.rightmenu {
+  grid-area: rightmenu;
+  background-color: coral;
+}
