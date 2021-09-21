@@ -6,12 +6,9 @@ import { getThreadsByCategory } from "../../../services/DataService";
 import Category from "../../../models/Category";
 
 const Main = () => {
-  const params = useParams();
   const { categoryId } = useParams<{ categoryId: string }>();
   const [category, setCategory] = useState<Category | undefined>();
   const [threadCards, setThreadCards] = useState<Array<JSX.Element> | null>(null);
-
-  console.log(params);
 
   useEffect(() => {
     console.log("main category id: ", categoryId);

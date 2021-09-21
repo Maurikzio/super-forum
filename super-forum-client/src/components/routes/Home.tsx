@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 import Nav from "../areas/Nav";
-import SideBar from "../areas/sidebar/Sidebar"
+import SideBar from "../areas/sidebar/Sidebar";
 import LeftMenu from "../areas/LeftMenu";
 import Main from "../areas/main/Main";
-import RightMenu from "../areas/RightMenu";
+import RightMenu from "../areas/rightMenu/RightMenu";
 import "./Home.css";
 
 const Home: FC = () => {
